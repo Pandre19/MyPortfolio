@@ -1,0 +1,195 @@
+/* --------------------------------- */
+/* profile wrapper */
+
+
+
+
+/* ---------------------------------- */
+/* portfolio wrapper */
+
+.background-portfolio {
+    margin-top: 40px;
+    background-color: white;
+}
+
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.github-button {
+    background-color: rgb(211, 211, 211);
+    display: block;
+    width: 9%;
+    border-radius: 50%;
+}
+
+.github-button:hover {
+    background-color: white;
+}
+
+.github-button img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.github-button:hover {
+    cursor: pointer;
+}
+
+.single-project-portfolio, .single-project-portfolio img {
+    width: 100%;
+}
+
+.single-project-portfolio {
+    margin-bottom: 35px;
+    display: block;
+}
+
+.single-project-portfolio > img {
+    height: 300px;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.21); 
+box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.21);
+}
+
+.single-project-upper-text {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-project-text {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.single-project-text p {
+    margin: 0 7%;
+}
+
+.wrapper-portfolio {
+    margin-bottom: 30px;
+}
+
+.wrapper-portfolio h3 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* ----------------------- */
+/* Social media wrapper */
+
+.social-media-wrapper {
+    background-image: url("../img/social-media-background.jpg");
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button {
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: content-box;
+    padding: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button:hover {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(235, 235, 235);
+}
+
+.social-media-button img {
+    width: 100%;
+}
+
+.social-media-buttons-wrapper {
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* -------------------- */
+/* FOOTER */
+
+footer {
+    background-color: rgb(228, 228, 228);
+}
+
+hr {
+    border: 1px solid rgb(182, 182, 182);
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper-bottom-link {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.wrapper-contact-information p {
+    display: inline-block;
+}
+
+.wrapper-contact-information .contact-information {
+    margin-left: 10px;
+}
+
+.wrapper-contact h3 {
+    text-align: center;
+}
+
+.wrapper-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    height: 200px;
+}
+
+p.contact-information {
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+.link-three {
+    display: none;
+}
+
+.wrapper-footer-buttons a:hover {
+    color: grey;
+}
+
+.wrapper-footer-buttons a {
+    margin-left: 15px;
+}
+
+.footer-link-three {
+    display: none;
+}

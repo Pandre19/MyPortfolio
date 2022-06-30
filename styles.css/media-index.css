@@ -1,0 +1,102 @@
+
+@media only screen and (min-width: 450px) {
+
+    /* --------------------------------- */
+    /* Social media wrapper */
+
+    .social-media-buttons-wrapper {
+        width: 420px;
+    }
+
+    .social-media-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .social-media-button:hover {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    
+    /* ---------------------------- */
+    /* PORTFOLIO */
+
+    .grid-portfolio{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .single-project-text {
+        padding: 0 3%;
+    }
+    .single-project-text p {
+        margin: 0 2%;
+    }
+
+    .single-project-portfolio > img {
+        height: 250px;
+    }
+
+    .github-button {
+
+        width: 12%;
+
+    }
+
+    /* ------------------------------ */
+    /* FOOTER */
+
+    .wrapper-footer {
+        width: 70%;
+    }
+
+    .footer-link-three {
+        display: inline-block;
+    }
+
+    .footer-link-one {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* --------------------------------- */
+    /* PORTFOLIO */
+
+    .grid-portfolio{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .single-project-text p {
+        font-size: 1.1rem;
+    }
+
+    /* ---------------------------------- */
+    /* Social Media */
+
+    .social-media-buttons-wrapper {
+        width: 520px;
+    }
+
+    .social-media-wrapper {
+        height: 250px;
+    }
+
+    /* ---------------------------------- */
+    /* FOOTER */
+
+    .wrapper-portfolio, .wrapper-sub-footer {
+        width: 80%;
+    }
+
+    .wrapper-footer {
+        width: 50%;
+    }
+}

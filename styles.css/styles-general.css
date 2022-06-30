@@ -2,8 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
     background-color: rgb(245, 245, 245);
+    
 }
+
+/* -------------------------------------- */
+/* Width of everything */
+header, .wrapper-profile, .wrapper-footer, .wrapper-portfolio, .wrapper-sub-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+h3, a {
+    color: rgb(27, 27, 27);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: rgb(99, 99, 99);
+}
+
+/* --------------------------------------- */
+/* Navbar */
+
+
