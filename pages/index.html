@@ -7,16 +7,91 @@
     <link rel="stylesheet" href="../styles.css/styles-index.css">
     <link rel="stylesheet" href="../styles.css/media-index.css">
     <link rel="stylesheet" href="../styles.css/styles-general.css">
+    <!-- <script src="../scripts/navbar-script.js"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar-wrapper">
+    <header>
+        <div class="navbar-wrapper">
+            <a href="index.html" class="logo-name">
+                <div class="img-andre-small"></div>JERRY'S
+            </a>
+            <ul class="navbar-links-wrapper">
+                <li class="navbar-link-wrapper">
+                    <a href="emailMe.html" class="navbar-link">
+                        Email Me
+                    </a>
+                </li>
+                <li class="navbar-link-wrapper super-links-wrapper">
+                    <!-- <div class=""> -->
+                        <a class="navbar-link leader-link">
+                            About Me
+                        </a>
+                    <!-- </div> -->
+                    <ul class="subnavbar-wrapper">
+                        <li class="subnavbar-link-wrapper">
+                            <a href="education.html">
+                                Education
+                            </a>
+                        </li>
+                        <li class="subnavbar-link-wrapper">
+                            <a href="skills.html">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="subnavbar-link-wrapper">
+                            <a href="path.html">
+                                Path
+                            </a>
+                        </li>
+                        <li class="subnavbar-link-wrapper">
+                            <a href="personal.html">
+                                Personal
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="three-rows-icon">
+                <span class="row"></span><span class="row"></span><span class="row"></span>
+            </div>
+        </div>
+    </header>
 
-    </div>
 
-    <div class="first-profile-wrapper">
+    <div id="introduction" class="introduction-wrapper">
+        <div class="intro-left-section">
+            <div class="intro-first-background">
 
+            </div>
+            <div class="intro-left-wrapper">
+                <h2 class="intro-presentation">Hello, I am</h2>
+                <h1 class="intro-name">Jerry Pena</h1>
+                <div class="intro-titles">
+                    <div class="intro-titles-wrapper">
+                        <div class="i-title-title">Web Dev</div>
+                        <div class="i-title-title">Mobile Dev</div>
+                    </div>
+                </div>
+                <p class="intro-description">
+                    I am a student and a future web and software developer. Deeply interested in full stack development. Also looking forward to learn about android apps. Learning Enthusiat.
+                </p>
+                <a href="#portfolio" class="go-to-portfolio-button-wrappper">
+                    <div class="go-to-portfolio-button">
+                        Check Portfolio
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="intro-right-section">
+           
+            <div class="intro-image-background">
+
+            </div>
+            <img src="../img/andre-big.png" alt="me-big-image">
+        </div>
     </div>
 
     <div id="portfolio" class="background-portfolio">
@@ -113,15 +188,56 @@
         </div>
     </div>
 
+    <div class="stars-background">
+        <div class="stars-background-wrapper">
+            <h1>
+                Why Am I a Great Asset?
+            </h1>
+            <div class="stars-paragraph-wrapper">
+                <p class="stars-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis lacinia lectus, quis laoreet neque lobortis eu. Nulla dignissim velit a porttitor 
+                </p>
+            </div>
+            <div class="stars-paragraph-wrapper">
+                <p class="stars-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis lacinia lectus, quis laoreet neque lobortis eu. Nulla dignissim velit a porttitor consectetur. Aliquam feugiat justo mauris, vitae porttitor urna bibendum a.
+                </p>
+            </div>
+            <div class="stars-paragraph-wrapper">
+                <p class="stars-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis lacinia lectus, quis laoreet neque lobortis eu. Nulla dignissim velit a porttitor consectetur. Aliquam feugiat justo mauris, vitae porttitor urna bibendum a.
+                </p>
+            </div>
+
+            <a href="" class="stars-button-skills">
+                More Skills
+            </a>
+
+            <div class="whole-quote-wrapper">
+                <q class="stars-quote">
+                    Anyone who keeps learning stays young.
+                </q>
+                <div class="quote-person-wrapper">
+                    <p class="stars-quote-name">
+                        Henry Ford
+                    </p>
+                    <div class="stars-quote-person-image img-andre-small">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="social-media-wrapper">
         <div class="social-media-buttons-wrapper">
-            <a href="https://www.instagram.com/_andre_5432/" class="social-media-button">
+            <a href="https://www.instagram.com/_andre_5432/" class="social-media-button" target="_blank">
                 <img src="../img/instagram-square-brands.svg" alt="instagram-logo">
             </a>
-            <a href="https://www.linkedin.com/in/jerry-andre-pena-alfaro-176a1823a/" class="social-media-button">
+            <a href="https://www.linkedin.com/in/jerry-andre-pena-alfaro-176a1823a/" class="social-media-button" target="_blank">
                 <img src="../img/linkedin-brands.svg" alt="linkedin-logo">
             </a>
-            <a href="https://github.com/Pandre19" class="social-media-button">
+            <a href="https://github.com/Pandre19" class="social-media-button" target="_blank">
                 <img src="../img/github-brands.svg" alt="github-logo">
             </a>
         </div>
@@ -172,7 +288,7 @@
                     <a class="footer-link-three" href="#contact">
                         CONTACT
                     </a>
-                    <a class="footer-link-one" href="index.html">
+                    <a class="footer-link-one" href="#introduction">
                         BACK TO TOP
                     </a>
                 </div>
@@ -181,4 +297,6 @@
         </div>
     </footer>
 </body>
+
+<script type="text/javascript" src="../scripts/navbar-script.js"></script>
 </html>

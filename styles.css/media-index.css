@@ -1,6 +1,43 @@
 
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
 @media only screen and (min-width: 450px) {
 
+     /* --------------------------------- */
+    /* Introduction */
+
+    .introduction-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro-left-section {
+        height: 100%;
+    }
+    
+    .intro-right-section {
+        position: relative;
+        height: 100%;
+        background-color: rgb(253, 198, 253);
+    }
+
+    .intro-right-section img {
+        display: none;
+    }
+
+
+
+    .location-age-wrapper {
+        display: none;
+    }
+
+    .intro-left-wrapper {
+        gap: 20px;
+    }
     /* --------------------------------- */
     /* Social media wrapper */
 
@@ -19,6 +56,9 @@
         background-color: rgb(235, 235, 235);
     }
 }
+
+
+
 
 
 @media only screen and (min-width: 768px){
@@ -46,6 +86,17 @@
 
         width: 12%;
 
+    }
+
+     /* --------------------------------- */
+    /* Introduction */
+    
+    .intro-description {
+        display: block;
+        text-align: left;
+        text-shadow: 2px 1px 6px rgba(24,10,6,0.93);
+        color: white;
+        font-weight: bold;
     }
 
     /* ------------------------------ */
@@ -76,6 +127,18 @@
 
     .single-project-text p {
         font-size: 1.1rem;
+    }
+
+     /* --------------------------------- */
+    /* Introduction */
+
+    .intro-right-section img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;right:0;
     }
 
     /* ---------------------------------- */

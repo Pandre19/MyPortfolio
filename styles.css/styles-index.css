@@ -1,6 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
 /* --------------------------------- */
 /* profile wrapper */
 
+.introduction-wrapper {
+    margin-top: 95px;
+    height: calc(100vh - 95px);
+    position: relative;
+}
+
+.intro-left-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding: 5%;
+    background-color: rgb(253, 198, 253);
+    height: 50%;
+}
+
+.go-to-portfolio-button {
+    border: 2px solid rgb(85, 1, 85);
+    border-radius: 5px;
+    background-color: rgb(179, 1, 179);
+    padding: 15px 20px;
+    color: white;
+}
+
+.intro-right-section {
+
+    flex: 1;
+    position: relative;
+    height: 50%;
+    background-color: rgb(253, 198, 253);
+}
+
+.intro-left-wrapper {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    z-index: 20;
+}
+
+.intro-right-section img {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;right:0;
+
+}
+
+#bigger-image-andre{
+    width: 100%;
+    position: absolute;
+    bottom: 0;right:0;
+    z-index: 30;
+}
+
+.intro-first-background {
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    
+    background-color: rgb(194, 128, 194);
+}
+
+
+.intro-image-background {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    background-color: rgb(194, 128, 194);
+}
+
+.intro-description {
+    display: none;
+}
+
+.intro-presentation {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.intro-name {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 1px 6px rgba(24,10,6,0.93);
+}
+
+.i-title-title {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.intro-titles-wrapper{
+    display: flex;
+    gap: 20px;
+}
 
 
 
@@ -8,8 +118,20 @@
 /* portfolio wrapper */
 
 .background-portfolio {
-    margin-top: 40px;
     background-color: white;
+    padding-bottom: 30px;
+}
+
+.wrapper-portfolio {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
+
+}
+
+.wrapper-portfolio h3 {
+    text-align: center;
+    margin: 50px 0;
 }
 
 .grid-portfolio {
@@ -75,14 +197,60 @@ box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.21);
     margin: 0 7%;
 }
 
-.wrapper-portfolio {
-    margin-bottom: 30px;
+/* ------------------------------- */
+/* Why I am a good asset, stars background */
+
+.stars-background{
+    background-image: url("../img/stars-background.jpg");
+    padding-bottom: 50px;
 }
 
-.wrapper-portfolio h3 {
-    text-align: center;
-    margin: 40px 0;
+.stars-background-wrapper {
+    color: white !important;
 }
+
+.stars-background-wrapper h1 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 50px;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: -5px 5px 0px #e97ce9, -10px 10px 0px #e97ce9;
+}
+
+.stars-paragraph {
+    color: white;
+    text-shadow: 3px 2px 0 #7A7A7A;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.whole-quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stars-quote {
+    display: inline-block;
+    font-family: 'The Nautigal', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.quote-person-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stars-quote-name {
+    order: 2;
+}
+
 
 /* ----------------------- */
 /* Social media wrapper */
@@ -139,10 +307,6 @@ footer {
 
 hr {
     border: 1px solid rgb(182, 182, 182);
-}
-
-a {
-    text-decoration: none;
 }
 
 .wrapper-bottom-link {
