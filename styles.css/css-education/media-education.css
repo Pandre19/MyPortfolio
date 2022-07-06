@@ -1,0 +1,10 @@
+
+@media only screen and (min-width: 768px) {
+    .change-content-buttons-wrapper {
+        flex-direction: row;
+    }
+
+    .change-content-button {
+        flex: 1;
+    }
+}

@@ -3,20 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    /* background-color: white; */
 }
 html {
     scroll-behavior: smooth;
   }
 
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     
 }
 
 /* -------------------------------------- */
 /* Width of everything */
 .wrapper-profile, .wrapper-footer, .wrapper-portfolio, .wrapper-sub-footer, 
-.navbar-wrapper, .stars-background-wrapper{
+.navbar-wrapper, .stars-background-wrapper, .education-background-wrapper{
     width: 90%;
     margin: 0 auto;
 }
@@ -91,8 +92,10 @@ header {
 .navbar-links-wrapper {
     display: flex;
     align-items: center;
-
+    min-width: 420px;
 }
+
+
 
 .navbar-link-wrapper {
     margin: 0;
@@ -163,7 +166,7 @@ a.leader-link, a.navbar-link{
 /*  */
 .subnavbar-wrapper a {  
     display: block;
-    padding: 20px 15px;
+    padding: 20px 25px;
     text-align: center;
     color: white;
 }
@@ -253,7 +256,7 @@ ul.subnavbar-wrapper {
     }
     
     ul.subnavbar-wrapper {
-        right: calc(5% - 5px);
+        right: calc(5%-10px);
         width: 200%;
     }
     

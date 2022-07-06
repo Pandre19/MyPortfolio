@@ -1,0 +1,56 @@
+
+.education-background{
+    margin-top: 95px;
+    min-height: calc(100vh - 95px);
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0;
+}
+
+.education-background-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.change-content-buttons-wrapper {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.33); 
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.33);
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.change-content-button {
+    padding: 20px 0;
+}
+
+.change-content-button:hover {
+    cursor: pointer;
+}
+
+.change-content-button p {
+    font-weight: bold;
+}
+
+.change-content-button.active {
+    background-color: rgb(228, 176, 213); 
+    transition: all 0.5s ease-in-out;   
+}
+
+.change-content-button.active p {
+    color: white;
+}
+
+.myeducation-card-wrapper img{
+    width: 200px;
+}
+
+.my-education-wrapper-general {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.31); 
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.31);
+    overflow: hidden;
+}
