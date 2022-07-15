@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css/css-emailMe/styles-emailMe.css">
+
+    <link rel="stylesheet" href="../styles.css/css-thanks/styles-thanks.css">
     <link rel="stylesheet" href="../styles.css/styles-general.css">
-    <link rel="stylesheet" href="../styles.css/css-emailMe/media-emailMe.css">
-    <!-- <script src="../scripts/navbar-script.js"></script> -->
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
  
     <title>Email Me</title>
@@ -51,11 +51,11 @@
                                 Path
                             </a>
                         </li>
-                        <li class="subnavbar-link-wrapper">
+                        <!-- <li class="subnavbar-link-wrapper">
                             <a href="personal.html">
                                 Personal
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
             </ul>
@@ -65,49 +65,24 @@
         </div>
     </header>
 
-    <div class="emailme-whole-background">
-        <h1 class="emailme-title">
-            Get in touch
-        </h1>
-        <div class="emailme-content-wrapper">
-            <div class="email-wrapper-message">
-
-            </div>
-
-            <div class="email-wrapper-form">
-                
-                <form action="https://formsubmit.co/alfandre121@gmail.com" method="POST">
-                    <input type="hidden" name="_autoresponse" value="Your message has been successfully sent. This is just an automated message">
-                    <!-- <input  type="hidden" name="_captcha" value="false"> -->
-                    <input id="next" type="hidden" name="_next" value="http://127.0.0.1:5500/pages/index.html">
-                    <div class="subform-wrapper">
-                        <label for="">
-                            Email Address
-                        </label>
-                        <input type="email" name="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="subform-wrapper">
-                        <label for="">
-                            Subject
-                        </label>
-                        <input type="text" name="_subject" placeholder="Email Subject" required>
-                    </div>
-                    <div class="subform-wrapper">
-                        <label for="">
-                            Your message
-                        </label>
-                        <textarea type="text" name="message" placeholder="Write Your Message" rows="10" required>
-                            </textarea>
-                    </div>
-                    
-                    <button id="email-button" type="submit">Send Message</button>
-               </form>
+    <div class="thanks-whole-background">
+        <div class="envelope-background-wrapper">
+            <div class="thanks-content-wrapper">
+                <h2>
+                    Thank you for your message
+                </h2>
+                <h4>
+                    I will respond you
+                </h4>
+                <a href="./index.html">
+                    Return to home page
+                </a>
             </div>
         </div>
     </div>
     
 
     <script type="text/javascript" src="../scripts/navbar-script.js"></script>
-    <script type="text/javascript" src="../scripts/emailMe-script.js"></script>
+    <!-- <script type="text/javascript" src="../scripts/emailMe-script.js"></script> -->
 </body>
 </html>
