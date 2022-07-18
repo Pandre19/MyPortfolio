@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px) {
+    
+    .email-wrapper-message {
+        background-color: rgb(177, 114, 177);
+        order: 0;
+    }
+
+    .email-wrapper-message ul li{
+        margin-right: 15px;
+        float: left;
+    }
+
+    .emailme-whole-background {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .emailme-content-wrapper {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .emailme-whole-background {
+        width: 70%;
+    }
+
+    .email-wrapper-message {
+        flex: 1;
+    }
+
+    .email-wrapper-form {
+        flex: 3;
+    }
+
+    .email-wrapper-message ul li{
+        line-height: 40px;
+    }
+}
