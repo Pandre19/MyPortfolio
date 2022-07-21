@@ -1,0 +1,28 @@
+@media only screen and (min-width: 768px) {
+    .content img {
+        width: 50% !important;
+        float: left;
+        margin-right: 15px;
+        margin-top: 0px !important;
+    }
+
+    .content::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .mypath-whole-background {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .content img {
+        width: 30% !important;
+    }
+
+    .mypath-whole-background {
+        width: 60% !important;
+    }
+}
