@@ -1,29 +1,171 @@
-.skills-whole-wrapper {
-    background-color: yellow;
-    display: flex;
-    margin-top: 95px !important;
-    /* min-height: calc(100vh - 95px); */
-    /* background-color: rgb(245, 245, 245); */
+.education-background{
+    margin-top: 95px;
+    min-height: calc(100vh - 95px);
+    background-color: rgb(245, 245, 245);
     padding: 30px 0;
-    /* height: calc(100vh - 100px); */
 }
 
-.skills-reasons-wrapper {
-    flex: 1;
-    /* height: calc(100vh - 100px); */
-    background-color: blue;
+.change-content-button.active {
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(91,154,246,1) 100%);
+    transition: all 0.5s ease-in-out;   
+}
+
+.skills-content-wrapper {
+    padding: 30px 30px;
+
+
+}
+
+.card-side {
+    color: black;
+}
+
+.card-general-container {
+    height: 300px;
+    width: 100%;
+    perspective: 100%;
+}
+
+.card-container {
     position: relative;
+    transition: transform 0.6s;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.rotated{
+    transform: rotateY(180deg);
+}
+
+.card-general-container:hover .card-container .card-front > div{
+    color: rgb(131, 196, 240);
+    font-size: 220%;
+    cursor: pointer;
+}
+
+.card-general-container:hover .card-container{
+
+    cursor: pointer;
+}
+
+
+.card-side {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border:5px  solid rgb(255, 255, 255);
+    background: linear-gradient(90deg, #e98b6f, #f371a3, #7cd0ee, #8df8df);
+	background-size: 400% 400%;
+	animation: gradient-effect 10s ease infinite;
+}
+
+@keyframes gradient-effect {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.card-back p, .card-back span{
+    color: white;
+    font-weight: bold;
+}
+
+.card-back p {
+    width: 90%;
+}
+
+.card-back span {
+    background-color: transparent;
+    border: 4px solid white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.card-front {
+    /* background-color: blue; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.skills-content-wrapper {
-    flex: 3;
-    height: 2000px ;
-    background-color: red;
+
+#humility::before, #honesty::before, #reliable::before, #team-work::before,
+#respect::before {
+    content: "";
+    background-image: url(".././../img/skills/humility.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.30;
+      transition: all 0.5s ease-in-out;   
 }
 
-.skills-fixed-wrapper {
-    background-color: purple;
-    width: 90%;
-    height: 300px;
-    position: fixed;
+#humility:hover::before, #honesty:hover::before, #reliable:hover::before,
+#team-work:hover::before, #respect:hover::before {
+      opacity: 0.6;
 }
+
+#honesty::before {
+    background-image: url(".././../img/skills/honesty.png") !important;
+}
+#reliable::before {
+    background-image: url(".././../img/skills/reliable.png") !important;
+}
+
+#team-work::before {
+    background-image: url(".././../img/skills/team-work.jpg") !important;
+}
+
+#respect::before {
+    background-image: url(".././../img/skills/respect.png") !important;
+}
+
+.card-front > div {
+    position: relative;
+    
+    /* Doing background circle */
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+    min-width: 100px;
+    max-width: 130px;
+    font-size: 200%;
+    color: #FFFFFF;
+    background: #ece9e9;
+    text-shadow: 3px 5px 2px #474747;
+    transition: all 0.5s ease-in-out;
+}
+
+/* -----------------------
+
+CARDS FOR HARD SKILLS
+
+------------------------------*/
