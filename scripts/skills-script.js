@@ -5,6 +5,7 @@ var education_wrapper = document.getElementById("education-wrapper");
 var certifications_wrapper = document.getElementById("certifications-wrapper");
 
 var skills_content_wrapper = document.getElementsByClassName("card-general-container");
+var hard_skills_card = document.getElementsByClassName("hard-skills-card");
 
 
 var function_education_button_management = function() {
@@ -30,9 +31,20 @@ var function_certification_button_management = function() {
 var container;
 for(var i=0; i < skills_content_wrapper.length; i++){
     skills_content_wrapper[i].addEventListener("click", function() {
-        console.log("tuki");
         container = this.children[0];
         container.classList.toggle("rotated");
+    });
+}
+
+var hard_skills_single_container;
+for(var i=0; i < hard_skills_card.length; i++){
+    hard_skills_card[i].addEventListener("mouseover", function() {
+        container = this.children[0].children[0].children[0].children[0];
+        container.play();
+    });
+    hard_skills_card[i].addEventListener("mouseout", function() {
+        container = this.children[0].children[0].children[0].children[0];
+        container.pause();
     });
 }
 

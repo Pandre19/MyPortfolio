@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../styles.css/css-portfolio/media-portfolio.css">
     <link rel="stylesheet" href="../styles.css/styles-general.css">
     <link rel="stylesheet" href="../styles.css/css-portfolio/styles-portfolio.css">
+    <link rel="stylesheet" href="../styles.css/css-portfolio/portfolio-section.css">
     <!-- <script src="../scripts/navbar-script.js"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>My Portfolio</title>
 </head>
 <body>
 
@@ -67,17 +68,197 @@
         </div>
     </header>
 
-    <div class="skills-whole-wrapper">
-        <div class="skills-reasons-wrapper">
-            <!-- <div class="skills-fixed-wrapper">
-                
-            </div> -->
-        </div>
-        <div class="skills-content-wrapper">
+    <div class="portfolio-page-whole-wrapper">
+        <div class="portfolio-page-settings-wrapper potfolio-page-common-style-wrapper">
+           <div class="title-wrapper-settings-portfolio">
+               <h3>
+                   Settings & More
+               </h3>
+           </div>
 
+           <div class="content-wrapper-settings-portfolio">
+               <div class="content-settings-section">
+                    <h3 class="setting-portfolio-subtitles">
+                        Search by Language:
+                    </h3>
+                    <form id="portfolio-page-form">
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language1" name="language" value="html-css">
+                            <label for="vehicle1"> HTML CSS</label>
+                        </div>
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language2" name="language" value="js">
+                            <label for="vehicle1"> JS</label>
+                        </div>
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language3" name="language" value="c#">
+                            <label for="vehicle1"> C#</label>
+                        </div>
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language4" name="language" value="react">
+                            <label for="vehicle1"> React</label><br>
+                        </div>
+                    </form>
+               </div>
+               <div class="content-settings-section">
+                    <h3 class="setting-portfolio-subtitles">
+                        Download:
+                    </h3>
+                    <a href="https://github.com/Pandre19" target=”_blank” class="setting-portfolio-github-link">
+                        My Github
+                    </a>
+               </div>
+           </div>
+        </div>
+        <div class="portfolio-page-content-wrapper potfolio-page-common-style-wrapper">
+            <div class="title-wrapper-settings-portfolio">
+                <h3>PORTFOLIO</h3>
+            </div>
+            <div class="grid-portfolio">
+                <div class="single-project-portfolio">
+                    <div id="backside-single-project" class="single-project-backside-wrapper">
+                        <div class="backside-buttons-wrapper">
+                            <a href="https://github.com/Pandre19/SpeedTypingGame" target=”_blank”>
+                                Code
+                            </a>
+                            <a href="https://pandre19.github.io/SpeedTypingGame/" target=”_blank”>
+                                Website
+                            </a>
+                        </div>
+                        <p>
+                            This project is for testing your typing speed and abilities in the keyboard. Give it a try.
+                        </p>
+                    </div>
+                    <img src="../img/typing1.PNG" alt="">
+                    <div class="single-project-lowepart-wrapper">
+                        <div class="single-project-text">
+                            <div class="single-project-upper-text">
+                                <h2>
+                                    Typing Speed Game
+                                </h2>
+                                <p>
+                                    2022 Jan
+                                </p>
+                            </div>
+                            <div class="single-project-languages-wrapper">
+                                <span class="single-project-languages-item">
+                                    HTML CSS
+                                </span>
+                                <span class="single-project-languages-item">
+                                    JS
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-button-single" onclick="ToggleProject(0)">
+                            <h3 class="bottom-button-single-text">
+                                Links and More Info
+                            </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="single-project-portfolio">
+                    <div id="backside-single-project" class="single-project-backside-wrapper">
+                        <p>
+                            This project is for testing your typing speed and abilities in the keyboard. Give it a try.
+                        </p>
+                    </div>
+                    <img src="../img/typing1.PNG" alt="">
+                    <div class="single-project-lowepart-wrapper">
+                        <div class="single-project-text">
+                            <div class="single-project-upper-text">
+                                <h2>
+                                    Typing Speed Game
+                                </h2>
+                                <p>
+                                    2022 Jan
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="bottom-button-single" onclick="ToggleProject(1)">
+                            <h3 class="bottom-button-single-text">
+                                Links and More Info
+                            </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="single-project-portfolio">
+                    <img src="../img/cards1.PNG" alt="">
+                    <div class="single-project-text">
+                        <div class="single-project-upper-text">
+                            <h2>
+                                Profile Cards
+                            </h2>
+                            <a class="github-button" href="https://github.com/Pandre19/PersonalInfo" target="_blank">
+                                <img src="../img/github-brands.svg" alt="github-logo">
+                            </a>
+                        </div>
+                        <p>
+                            This project shows some information about me in cards, Check it if you want to know me a little more.
+                        </p>
+                    </div>
+                </div>
+                <div class="single-project-portfolio">
+                    <img src="../img/shape1.PNG" alt="">
+                    <div class="single-project-text">
+                        <div class="single-project-upper-text">
+                            <h2>
+                                Change Shape
+                            </h2>
+                            <a class="github-button" href="https://github.com/Pandre19/EnlargeDecreaseRhombus" target="_blank">
+                                <img src="../img/github-brands.svg" alt="github-logo">
+                            </a>
+                        </div>
+                        <p>
+                            Play with decreasing and enlarging the shape of a rhombus and decide how many rows are gonna be mutated
+                        </p>
+                    </div>
+                </div>
+                <div class="single-project-portfolio">
+                    <img src="../img/digits1.PNG" alt="">
+                    <div class="single-project-text">
+                        <div class="single-project-upper-text">
+                            <h2>
+                                100 Digits
+                            </h2>
+                            <a class="github-button" href="https://github.com/Pandre19/SumNumber100Digits/tree/master" target="_blank">
+                                <img src="../img/github-brands.svg" alt="github-logo">
+                            </a>
+                        </div>
+                        <p>
+                            The common integer cannot store a 100 digit number, but with this program using arrays you can make large additions.
+                        </p>
+                    </div>
+                </div>
+                <div class="single-project-portfolio">
+                    <img src="../img/typing1.PNG" alt="">
+                    <div class="single-project-text">
+                        <h2>
+                            Photo Gallery
+                        </h2>
+                        <p>
+                            This project shows the front page of a marketing website meant for a specific business I'm interested in.
+                        </p>
+                    </div>
+                </div>
+                <div class="single-project-portfolio">
+                    <img src="../img/typing1.PNG" alt="">
+                    <div class="single-project-text">
+                        <h2>
+                            Marketing Page
+                        </h2>
+                        <p>
+                            This project shows the front page of a marketing website meant for a specific business I'm interested in.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <script type="text/javascript" src="../scripts/navbar-script.js"></script>
+    <script type="text/javascript" src="../scripts/single-portfolio.js"></script>
 </body>
 </html>

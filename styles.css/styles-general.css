@@ -18,7 +18,7 @@ body {
 /* Width of everything */
 .wrapper-profile, .wrapper-footer, .wrapper-portfolio, .wrapper-sub-footer, 
 .navbar-wrapper, .stars-background-wrapper, .education-background-wrapper,
-.skills-whole-wrapper, .emailme-whole-background, .mypath-whole-background{
+.skills-whole-wrapper, .emailme-whole-background, .mypath-whole-background, .portfolio-page-whole-wrapper{
     width: 90%;
     margin: 0 auto;
 }

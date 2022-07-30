@@ -13,18 +13,22 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgb
 
 .skills-content-wrapper {
     padding: 30px 30px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
 }
 
-.card-side {
-    color: black;
-}
+
 
 .card-general-container {
     height: 300px;
     width: 100%;
     perspective: 100%;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .card-container {
@@ -39,7 +43,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgb
     transform: rotateY(180deg);
 }
 
-.card-general-container:hover .card-container .card-front > div{
+.card-general-container:hover .card-container .card-front > #soft-skills-div{
     color: rgb(131, 196, 240);
     font-size: 220%;
     cursor: pointer;
@@ -104,6 +108,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgb
     /* background-color: blue; */
     color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -143,7 +148,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgb
     background-image: url(".././../img/skills/respect.png") !important;
 }
 
-.card-front > div {
+.card-front > #soft-skills-div {
     position: relative;
     
     /* Doing background circle */
@@ -169,3 +174,96 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgb
 CARDS FOR HARD SKILLS
 
 ------------------------------*/
+.video-container{
+    display: block;
+    width: 100%;
+    height: 150px;
+    /* min-height: 100px !important; */
+}
+
+.video-container video {
+    width: 100%;
+    height: 150px;
+    /* object-fit: cover; */
+}
+
+.card-front video {
+    object-fit: cover;
+}
+
+.hard-skill-front-title {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(103,127,129,1) 100%);
+}
+
+.hard-skill-front-title p{
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+#hard-skill-front-title-java {
+     background-image: url("../../img/skills/java.jpg");
+}
+
+#hard-skill-front-title-html-css {
+    background-image: url("../../img/skills/html-css.jpg");
+    background-position: center;
+}
+
+#hard-skill-front-title-react {
+    background-image: url("../../img/skills/react.png");
+}
+
+#hard-skill-front-title-bootstrap {
+    background-image: url("../../img/skills/bootstrap.jpeg");
+}
+
+#hard-skill-front-title-git {
+    background-image: url("../../img/skills/git.jpg");
+}
+
+.hard-skill-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+.hard-skills-card:hover .card-container .hard-skill-profile {
+    width: 115px;
+    height: 115px;
+}
+
+.hard-skills-card:hover .card-container .hard-skill-front-title p{
+    color: black;
+}
+
+.progress-bar-container {
+    height: 15px;
+    width: 70%;
+    margin: 0 auto;
+    background-color:rgb(212, 212, 212);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-value {
+    background-color: white;
+    height: 100%;
+}
+
+.card-level {
+    font-style: italic;
+}
