@@ -1,32 +1,27 @@
+.button-change-background {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 15px 0px rgba(0,0,0,0.42); 
+    box-shadow: 1px 0px 15px 0px rgba(0,0,0,0.42);
+}
 
+.button-change-background:hover {
+    cursor: pointer;
+}
+
+.button-change-background img {
+    width: 35px !important;
+}
 
 .grid-portfolio {
     display: grid;
     padding: 30px;
     grid-template-columns: 1fr;
     gap: 20px;
-}
-
-.github-button {
-    background-color: rgb(211, 211, 211);
-    display: block;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-.github-button:hover {
-    background-color: white;
-}
-
-.github-button img {
-    width: 35px;
-    height: 35px;
-    margin-bottom: -4px;
-}
-
-.github-button:hover {
-    cursor: pointer;
 }
 
 .single-project-portfolio, .single-project-portfolio img {
@@ -44,8 +39,9 @@
 }
 
 .single-project-portfolio > img {
-    height: 300px;
+    height: 250px;
     object-fit: cover;
+    transition: all 0.5s ease-in-out;
 }
 
 .single-project-upper-text {
@@ -86,6 +82,7 @@
 
 .bottom-button-single-text {
     color: rgb(231, 231, 231);
+    margin: 0 !important;
 }
 
 .single-project-backside-wrapper {

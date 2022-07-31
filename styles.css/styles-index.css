@@ -124,7 +124,7 @@
 /* ---------------------------------- */
 /* portfolio wrapper */
 
-.background-portfolio {
+ .background-portfolio {
     background-color: white;
 }
 
@@ -179,36 +179,15 @@
 
 .wrapper-portfolio h3 {
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0 30px 0;
 }
+
+/*
 
 .grid-portfolio {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-}
-
-.github-button {
-    background-color: rgb(211, 211, 211);
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-.github-button:hover {
-    background-color: white;
-}
-
-.github-button img {
-    width: 40px;
-    height: 40px;
-    /* margin-bottom: -4px; */
-}
-
-.github-button:hover {
-    cursor: pointer;
 }
 
 .single-project-portfolio, .single-project-portfolio img {
@@ -246,7 +225,7 @@ box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.21);
 
 .single-project-text p {
     margin: 0 7%;
-}
+} */
 
 /* ------------------------------- */
 /* Why I am a good asset, stars background */

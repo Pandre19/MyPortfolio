@@ -167,7 +167,7 @@
     /* PORTFOLIO */
 
     .grid-portfolio{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr !important;
     }
 
     .single-project-text p {
