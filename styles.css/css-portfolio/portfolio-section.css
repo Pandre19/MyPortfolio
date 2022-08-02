@@ -30,7 +30,7 @@
 
 .single-project-portfolio {
     margin-bottom: 10px;
-    display: block;
+    /* display: block; */
     border-radius: 20px;
     overflow: hidden;
     background-color: rgb(221, 221, 253);

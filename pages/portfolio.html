@@ -83,19 +83,23 @@
                     </h3>
                     <form id="portfolio-page-form">
                         <div class="portfolio-form-row">
-                            <input type="checkbox" id="language1" name="language" value="html-css">
+                            <input type="checkbox" id="language1" name="language" value="html-css"
+                                onclick="checkBoxChecked(this)">
                             <label for="vehicle1"> HTML CSS</label>
                         </div>
                         <div class="portfolio-form-row">
-                            <input type="checkbox" id="language2" name="language" value="js">
+                            <input type="checkbox" id="language2" name="language" value="js"
+                            onclick="checkBoxChecked(this)">
                             <label for="vehicle1"> JS</label>
                         </div>
                         <div class="portfolio-form-row">
-                            <input type="checkbox" id="language3" name="language" value="c#">
+                            <input type="checkbox" id="language3" name="language" value="c#"
+                            onclick="checkBoxChecked(this)">
                             <label for="vehicle1"> C#</label>
                         </div>
                         <div class="portfolio-form-row">
-                            <input type="checkbox" id="language4" name="language" value="react">
+                            <input type="checkbox" id="language4" name="language" value="react"
+                            onclick="checkBoxChecked(this)">
                             <label for="vehicle1"> React</label><br>
                         </div>
                     </form>
@@ -114,8 +118,11 @@
             <div class="title-wrapper-settings-portfolio">
                 <h3>PORTFOLIO</h3>
             </div>
+            <div id="no-portfolios-message-wrapper">
+                <h3>NO PROJECTS WITH THAT CHARACTERISTICS, YET...</h3>
+            </div>
             <div class="grid-portfolio">
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css js">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/SpeedTypingGame" target=”_blank”>
@@ -160,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/PersonalInfo" target=”_blank”>
@@ -202,7 +209,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/Minimalist-Portfolio" target=”_blank”>
@@ -244,7 +251,7 @@
                     </div>
                 </div>
                 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/TutoringFrontPage" target=”_blank”>
@@ -286,7 +293,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio c#">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/RectangleCalculator" target=”_blank”>
@@ -326,7 +333,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio c#">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/EnlargeDecreaseRhombus" target=”_blank”>
@@ -366,7 +373,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio c#">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/SumNumber100Digits" target=”_blank”>
@@ -410,6 +417,7 @@
     </div>
     
     <script type="text/javascript" src="../scripts/navbar-script.js"></script>
+    <script type="text/javascript" src="../scripts/search-portfolio.js"></script>
     <script type="text/javascript" src="../scripts/single-portfolio.js"></script>
 </body>
 </html>
