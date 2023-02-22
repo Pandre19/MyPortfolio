@@ -1,0 +1,168 @@
+
+.education-background{
+    margin-top: 95px;
+    min-height: calc(100vh - 95px);
+    background-color: rgb(245, 245, 245);
+    padding: 30px 0;
+}
+
+.education-background-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.change-content-buttons-wrapper {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.33); 
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.33);
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.change-content-button {
+    padding: 20px 0;
+}
+
+.change-content-button:hover {
+    cursor: pointer;
+}
+
+.change-content-button p {
+    font-weight: bold;
+}
+
+.change-content-button.active {
+    background-color: rgb(228, 176, 213); 
+    transition: all 0.5s ease-in-out;   
+}
+
+.change-content-button.active p {
+    color: white;
+}
+
+.myeducation-card-wrapper {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 25px 0;
+}
+
+.myeducation-card-wrapper img{
+    width: 200px;
+}
+
+.my-education-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 15px;
+}
+
+.my-education-card-content > * {
+    text-align: center;
+}
+
+.my-education-card-content h4 {
+    font-style: italic;
+    font-size: 20px;
+    color: purple;
+    text-decoration: underline;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.my-education-card-button-certification {
+    background-color:rgb(228, 176, 213);
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.my-education-card-button-certification:hover{
+    background-color:rgb(240, 211, 232);
+    cursor: pointer;
+}
+
+.my-education-card-button-certification p{
+    color: black;
+    font-weight: bold;
+}
+
+.my-education-card-description {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.my-education-card-description-disappear {
+    display: none;
+}
+
+.my-education-wrapper-general {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.31); 
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.31);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    animation: fade-in 1s;
+}
+
+#certifications-wrapper {
+    display: none;
+}
+
+  .modal-close img {
+    width: 50px;
+  }
+
+  
+  .modal-close:hover {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* The Modal Idea is based on the code from w3schools
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
+  It has been modified for this project
+*/
+
+.myeducational-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999999; 
+    background-color: rgba(0,0,0,0.9); 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+
+    
+  }
+
+  .myeducation-modal-active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .modal-image {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+

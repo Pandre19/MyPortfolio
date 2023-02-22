@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css/styles-index.css">
-    <link rel="stylesheet" href="../styles.css/media-index.css">
+
+    <link rel="stylesheet" href="../styles.css/css-portfolio/media-portfolio.css">
     <link rel="stylesheet" href="../styles.css/styles-general.css">
+    <link rel="stylesheet" href="../styles.css/css-portfolio/styles-portfolio.css">
     <link rel="stylesheet" href="../styles.css/css-portfolio/portfolio-section.css">
     <!-- <script src="../scripts/navbar-script.js"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+
+    <title>My Portfolio</title>
 </head>
 <body>
+
     <header>
         <div class="navbar-wrapper">
-            <a href="#" class="logo-name">
+            <a href="./index.html" class="logo-name">
                 <div class="img-andre-small"></div>JERRY'S
             </a>
             <ul class="navbar-links-wrapper">
@@ -37,7 +40,7 @@
                     <!-- </div> -->
                     <ul class="subnavbar-wrapper">
                         <li class="subnavbar-link-wrapper">
-                            <a href="portfolio.html">
+                            <a href="#">
                                 Portfolio
                             </a>
                         </li>
@@ -65,46 +68,61 @@
         </div>
     </header>
 
+    <div class="portfolio-page-whole-wrapper">
+        <div class="portfolio-page-settings-wrapper potfolio-page-common-style-wrapper">
+           <div class="title-wrapper-settings-portfolio">
+               <h3>
+                   Settings & More
+               </h3>
+           </div>
 
-    <div id="introduction" class="introduction-wrapper">
-        <div class="intro-left-section">
-            <div class="intro-first-background">
-
-            </div>
-            <div class="intro-left-wrapper">
-                <h2 class="intro-presentation">Hello, I am</h2>
-                <h1 class="intro-name">Jerry Pena</h1>
-                <div class="intro-titles">
-                    <div class="intro-titles-wrapper">
-                        <div class="i-title-title">Web Dev</div>
-                        <div class="i-title-title">Mobile Dev</div>
-                    </div>
-                </div>
-                <p class="intro-description">
-                    I am a student and a future web and software developer. Deeply interested in full stack development. Also looking forward to learn about android apps. Learning Enthusiat.
-                </p>
-                <a href="#portfolio" class="go-to-portfolio-button-wrappper">
-                    <div class="go-to-portfolio-button">
-                        Portfolio
-                    </div>
-                </a>
-            </div>
+           <div class="content-wrapper-settings-portfolio">
+               <div class="content-settings-section">
+                    <h3 class="setting-portfolio-subtitles">
+                        Search by Language:
+                    </h3>
+                    <form id="portfolio-page-form">
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language1" name="language" value="html-css"
+                                onclick="checkBoxChecked(this)">
+                            <label for="vehicle1"> HTML CSS</label>
+                        </div>
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language2" name="language" value="js"
+                            onclick="checkBoxChecked(this)">
+                            <label for="vehicle1"> JS</label>
+                        </div>
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language3" name="language" value="c#"
+                            onclick="checkBoxChecked(this)">
+                            <label for="vehicle1"> C#</label>
+                        </div>
+                        <div class="portfolio-form-row">
+                            <input type="checkbox" id="language4" name="language" value="react"
+                            onclick="checkBoxChecked(this)">
+                            <label for="vehicle1"> React</label><br>
+                        </div>
+                    </form>
+               </div>
+               <div class="content-settings-section">
+                    <h3 class="setting-portfolio-subtitles">
+                        Download:
+                    </h3>
+                    <a href="https://github.com/Pandre19" target=”_blank” class="setting-portfolio-github-link">
+                        My Github
+                    </a>
+               </div>
+           </div>
         </div>
-
-        <div class="intro-right-section">
-           
-            <div class="intro-image-background">
-
+        <div class="portfolio-page-content-wrapper potfolio-page-common-style-wrapper">
+            <div class="title-wrapper-settings-portfolio">
+                <h3>PORTFOLIO</h3>
             </div>
-            <img src="../img/andre-big.png" alt="me-big-image">
-        </div>
-    </div>
-
-    <div id="portfolio" class="background-portfolio">
-        <div class="wrapper-portfolio">
-            <h3>PORTFOLIO</h3>
+            <div id="no-portfolios-message-wrapper">
+                <h3>NO PROJECTS WITH THAT CHARACTERISTICS, YET...</h3>
+            </div>
             <div class="grid-portfolio">
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css js">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/SpeedTypingGame" target=”_blank”>
@@ -149,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/PersonalInfo" target=”_blank”>
@@ -191,7 +209,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/Minimalist-Portfolio" target=”_blank”>
@@ -233,7 +251,7 @@
                     </div>
                 </div>
                 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio html-css">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/TutoringFrontPage" target=”_blank”>
@@ -275,7 +293,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio c#">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/RectangleCalculator" target=”_blank”>
@@ -315,7 +333,7 @@
                     </div>
                 </div>
 
-                <div class="single-project-portfolio">
+                <div class="single-project-portfolio c#">
                     <div id="backside-single-project" class="single-project-backside-wrapper">
                         <div class="backside-buttons-wrapper">
                             <a href="https://github.com/Pandre19/EnlargeDecreaseRhombus" target=”_blank”>
@@ -354,151 +372,52 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-        <a id="link-see-more-proyect" href="./portfolio.html">
-                <p>See more projects...</p>
-        </a>
-    </div>
 
-    <div class="stars-background">
-        <video autoplay muted loop id="star-night-video">
-            <source src="../video/star-night.mp4" type="video/mp4">
-            There is no support for video.
-        </video>
-        <div class="stars-background-wrapper">
-            <h1>
-                Why Am I a Great Asset?
-            </h1>
-            <div class="stars-paragraph-wrapper stars-paragraph-wrapper-left">
-                <p class="stars-paragraph ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis lacinia lectus, quis laoreet neque lobortis eu. Nulla dignissim velit a porttitor 
-                </p>
-            </div>
-            <div class="stars-paragraph-wrapper stars-paragraph-wrapper-right">
-                <p class="stars-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis lacinia lectus, quis laoreet neque lobortis eu. Nulla dignissim velit a porttitor consectetur. Aliquam feugiat justo mauris, vitae porttitor urna bibendum a.
-                </p>
-            </div>
-            <div class="stars-paragraph-wrapper stars-paragraph-wrapper-left">
-                <p class="stars-paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis lacinia lectus, quis laoreet neque lobortis eu. Nulla dignissim velit a porttitor consectetur. Aliquam feugiat justo mauris, vitae porttitor urna bibendum a.
-                </p>
-            </div>
-
-            <a href="./skills.html" class="stars-button-skills">
-                More Skills
-            </a>
-
-            <div class="whole-quote-wrapper">
-                <q class="stars-quote">
-                    Anyone who keeps learning stays young.
-                </q>
-                <div class="quote-person-wrapper">
-                    <p class="stars-quote-name">
-                        Henry Ford
-                    </p>
-                    <div class="stars-quote-person-image">
-
+                <div class="single-project-portfolio c#">
+                    <div id="backside-single-project" class="single-project-backside-wrapper">
+                        <div class="backside-buttons-wrapper">
+                            <a href="https://github.com/Pandre19/SumNumber100Digits" target=”_blank”>
+                                Code
+                            </a>
+                        </div>
+                        <p>
+                            The common integer cannot store a 100 digit number, but with this program using arrays you can make large additions.
+                        </p>
+                    </div>
+                    <div class="button-change-background" onclick="BackgroundClick(this)">
+                        <img src="../img/change-icon.png" alt="">
+                    </div>
+                    <img src="../img/portfolio/digits1.PNG" alt="profile-cards-photo">
+                    <div class="single-project-lowepart-wrapper">
+                        <div class="single-project-text">
+                            <div class="single-project-upper-text">
+                                <h2>
+                                    100 Digits
+                                </h2>
+                                <p>
+                                    2022 Jun
+                                </p>
+                            </div>
+                            <div class="single-project-languages-wrapper">
+                                <span class="single-project-languages-item">
+                                    C#
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-button-single" onclick="ToggleProject(this)">
+                            <h3 class="bottom-button-single-text">
+                                Links and More Info
+                            </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="social-media-wrapper">
-        <div class="social-media-buttons-wrapper">
-            <a href="#" class="social-media-button" target="_blank">
-                <img src="#" alt="instagram-logo">
-            </a>
-            <a href="https://www.linkedin.com/in/jerry-andre-pena-alfaro-176a1823a/" class="social-media-button" target="_blank">
-                <img src="../img/linkedin-brands.svg" alt="linkedin-logo">
-            </a>
-            <a href="https://github.com/Pandre19" class="social-media-button" target="_blank">
-                <img src="../img/github-brands.svg" alt="github-logo">
-            </a>
-        </div>
-    </div>
-
-    <footer id="contact">
-        <div class="wrapper-footer">
-            <div class="wrapper-contact">
-                <h3>
-                    CONTACT
-                </h3>
-                <p>
-                    If you are interested in chatting or want more information about what I've been doing, please
-                    woring on, I'd love to hear from you.
-                </p>
-                <div class="wrapper-contact-information">
-                    <p>
-                        Phone
-                    </p>
-                    <p class="contact-information">
-                        (111) 111 1111
-                    </p>
-                </div>
-                <div class="wrapper-contact-information">
-                    <p>
-                        Email
-                    </p>
-                    <p class="contact-information">
-                        alfandre121@gmail.com
-                    </p>
-                </div>
-                <p>
-                    <em>I will reply you as soon as possible.</em>
-                    
-                </p>
-            </div>
-            <div class="footer-vertical-separator"></div>
-            <div class="wrapper-footer-link-buttons">
-                <a href="emailMe.html" class="footer-mail-me-link">
-                    Mail Me
-                </a>
-                <div class="footer-button-information-wrapper">
-                    <a href="portfolio.html" class="footer-button-information-link">
-                        Portfolio
-                    </a>
-                    <a href="education.html" class="footer-button-information-link">
-                    My Education
-                    </a>
-                    <a href="skills.html" class="footer-button-information-link">
-                        My Skills
-                    </a>
-                    <a href="path.html" class="footer-button-information-link">
-                        My Path
-                    </a>
-                    
-                </div>
                 
             </div>
         </div>
-        <div id="contact" class="wrapper-sub-footer">
-            <hr/>
-            <div class="wrapper-bottom-link">
-                <h3 class="inline-block">
-                    JERRY'S
-                </h3>
-                <div class="wrapper-footer-buttons">
-                    <a class="footer-link-three" href="#introduction">
-                        HOME
-                    </a>
-                    <a class="footer-link-three" href="#portfolio">
-                        PORTFOLIO
-                    </a>
-                    <a class="footer-link-one" href="#introduction">
-                        BACK TO TOP
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </footer>
+    </div>
+    
+    <script type="text/javascript" src="../scripts/navbar-script.js"></script>
+    <script type="text/javascript" src="../scripts/search-portfolio.js"></script>
+    <script type="text/javascript" src="../scripts/single-portfolio.js"></script>
 </body>
-
-<script type="text/javascript" src="../scripts/navbar-script.js"></script>
-<script type="text/javascript" src="../scripts/single-portfolio.js"></script>
-
 </html>

@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) {
+    .skills-content-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-general-container {
+        flex: 1 45%;
+        max-width: 430px;
+    }
+}

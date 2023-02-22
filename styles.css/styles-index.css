@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
+/* --------------------------------- */
+/* profile wrapper */
+
+#introduction, #portfolio{
+    scroll-margin-top: 90px;
+}
+
+
+
+
+.introduction-wrapper {
+    margin-top: 95px;
+    height: calc(100vh - 95px);
+    position: relative;
+}
+
+.intro-left-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding: 5%;
+    background-color: rgb(253, 198, 253);
+    height: 50%;
+}
+
+.go-to-portfolio-button {
+    border: 2px solid rgb(85, 1, 85);
+    border-radius: 5px;
+    background-color: rgb(179, 1, 179);
+    padding: 15px 20px;
+    color: white;
+}
+
+.intro-right-section {
+
+    flex: 1;
+    position: relative;
+    height: 50%;
+    background-color: rgb(253, 198, 253);
+}
+
+.intro-left-wrapper {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    z-index: 20;
+}
+
+.intro-right-section img {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;right:0;
+
+}
+
+#bigger-image-andre{
+    width: 100%;
+    position: absolute;
+    bottom: 0;right:0;
+    z-index: 30;
+}
+
+.intro-first-background {
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    
+    background-color: rgb(194, 128, 194);
+}
+
+
+.intro-image-background {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    background-color: rgb(194, 128, 194);
+}
+
+.intro-description {
+    display: none;
+}
+
+.intro-presentation {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.intro-name {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 1px 6px rgba(24,10,6,0.93);
+}
+
+.i-title-title {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.intro-titles-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* ---------------------------------- */
+/* portfolio wrapper */
+
+ .background-portfolio {
+    background-color: white;
+}
+
+.wrapper-portfolio {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+#link-see-more-proyect {
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    background: rgb(189, 189, 189);
+}
+
+#link-see-more-proyect p {
+    color:rgb(0, 0, 0);
+}
+
+#link-see-more-proyect:hover p{
+    color: white;
+    z-index: 10;
+}
+
+#link-see-more-proyect:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#link-see-more-proyect:hover:after {
+    width: 100%;
+}
+
+.wrapper-portfolio h3 {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+/*
+
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.single-project-portfolio, .single-project-portfolio img {
+    width: 100%;
+}
+
+.single-project-portfolio {
+    margin-bottom: 35px;
+    display: block;
+}
+
+.single-project-portfolio > img {
+    height: 300px;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.21); 
+box-shadow: 0px 0px 7px 6px rgba(0,0,0,0.21);
+}
+
+.single-project-upper-text {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-project-text {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.single-project-text p {
+    margin: 0 7%;
+} */
+
+/* ------------------------------- */
+/* Why I am a good asset, stars background */
+
+/* .stars-background-wrapper {
+    max-width: 900px;;
+    width: 75%;
+    background-color: yellow;
+} */
+
+.stars-paragraph-wrapper-left:hover .stars-paragraph{
+    transform: skewY(-3deg) ;
+}
+
+.stars-paragraph-wrapper-right:hover .stars-paragraph{
+    transform: skewY(3deg) ;
+}
+
+#star-night-video {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.stars-background{
+    position: relative;
+    /* background-image: url("../img/stars-background.jpg"); */
+    padding-bottom: 50px;
+}
+
+.stars-background-wrapper {
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars-background-wrapper h1 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 50px;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: -5px 5px 0px #e97ce9, -10px 10px 0px #e97ce9;
+}
+
+.stars-paragraph {
+    color: white;
+    text-shadow: 3px 2px 0 #7A7A7A;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.whole-quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stars-quote {
+    display: inline-block;
+    font-family: 'The Nautigal', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.quote-person-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stars-quote-name {
+    order: 2;
+}
+
+.stars-quote-person-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("../img/henry-ford.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.stars-quote-name {
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+a.stars-button-skills {
+    color: white;
+    border: 4px solid white;
+    padding: 20px 25px;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+a.stars-button-skills:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ----------------------- */
+/* Social media wrapper */
+
+.social-media-wrapper {
+    background-image: url("../img/social-media-background.jpg");
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button {
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: content-box;
+    padding: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button:hover {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(235, 235, 235);
+}
+
+.social-media-button img {
+    width: 100%;
+}
+
+.social-media-buttons-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* -------------------- */
+/* FOOTER */
+
+footer {
+    background-color: rgb(255, 255, 255);
+}
+
+hr {
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.wrapper-bottom-link {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.wrapper-contact-information p {
+    display: inline-block;
+}
+
+.wrapper-contact-information .contact-information {
+    margin-left: 10px;
+}
+
+.wrapper-contact h3 {
+    text-align: center;
+}
+
+.wrapper-contact {
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items:center;
+    gap:5px;
+}
+
+p.contact-information {
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+.link-three {
+    display: none;
+}
+
+.wrapper-footer {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-footer-buttons a:hover {
+    color: grey;
+}
+
+.wrapper-footer-buttons a {
+    margin-left: 15px;
+}
+
+.footer-link-three {
+    display: none;
+}
+
+.wrapper-footer-link-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wrapper-footer-link-buttons a {
+    display: block;
+    border: 3px solid grey;
+    border-radius:10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-mail-me-link {
+    background-color: grey;
+    color: white;
+}
+
+.footer-mail-me-link:hover {
+    background-color: white;
+    color: grey;
+}
+
+.footer-button-information-link:hover {
+    background-color: grey;
+    color: white;
+}
+
+.footer-button-information-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:  10px;
+}

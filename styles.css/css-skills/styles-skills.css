@@ -1,0 +1,269 @@
+.education-background{
+    margin-top: 95px;
+    min-height: calc(100vh - 95px);
+    background-color: rgb(245, 245, 245);
+    padding: 30px 0;
+}
+
+.change-content-button.active {
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(91,154,246,1) 100%);
+    transition: all 0.5s ease-in-out;   
+}
+
+.skills-content-wrapper {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+.card-general-container {
+    height: 300px;
+    width: 100%;
+    perspective: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-container {
+    position: relative;
+    transition: transform 0.6s;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.rotated{
+    transform: rotateY(180deg);
+}
+
+.card-general-container:hover .card-container .card-front > #soft-skills-div{
+    color: rgb(131, 196, 240);
+    font-size: 220%;
+    cursor: pointer;
+}
+
+.card-general-container:hover .card-container{
+
+    cursor: pointer;
+}
+
+
+.card-side {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border:5px  solid rgb(255, 255, 255);
+    background: linear-gradient(90deg, #e98b6f, #f371a3, #7cd0ee, #8df8df);
+	background-size: 400% 400%;
+	animation: gradient-effect 10s ease infinite;
+}
+
+@keyframes gradient-effect {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.card-back p, .card-back span{
+    color: white;
+    font-weight: bold;
+}
+
+.card-back p {
+    width: 90%;
+}
+
+.card-back span {
+    background-color: transparent;
+    border: 4px solid white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.card-front {
+    /* background-color: blue; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#humility::before, #honesty::before, #reliable::before, #team-work::before,
+#respect::before {
+    content: "";
+    background-image: url(".././../img/skills/humility.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.30;
+      transition: all 0.5s ease-in-out;   
+}
+
+#humility:hover::before, #honesty:hover::before, #reliable:hover::before,
+#team-work:hover::before, #respect:hover::before {
+      opacity: 0.6;
+}
+
+#honesty::before {
+    background-image: url(".././../img/skills/honesty.png") !important;
+}
+#reliable::before {
+    background-image: url(".././../img/skills/reliable.png") !important;
+}
+
+#team-work::before {
+    background-image: url(".././../img/skills/team-work.jpg") !important;
+}
+
+#respect::before {
+    background-image: url(".././../img/skills/respect.png") !important;
+}
+
+.card-front > #soft-skills-div {
+    position: relative;
+    
+    /* Doing background circle */
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+    min-width: 100px;
+    max-width: 130px;
+    font-size: 200%;
+    color: #FFFFFF;
+    background: #ece9e9;
+    text-shadow: 3px 5px 2px #474747;
+    transition: all 0.5s ease-in-out;
+}
+
+/* -----------------------
+
+CARDS FOR HARD SKILLS
+
+------------------------------*/
+.video-container{
+    display: block;
+    width: 100%;
+    height: 150px;
+    /* min-height: 100px !important; */
+}
+
+.video-container video {
+    width: 100%;
+    height: 150px;
+    /* object-fit: cover; */
+}
+
+.card-front video {
+    object-fit: cover;
+}
+
+.hard-skill-front-title {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(103,127,129,1) 100%);
+}
+
+.hard-skill-front-title p{
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+#hard-skill-front-title-java {
+     background-image: url("../../img/skills/java.jpg");
+}
+
+#hard-skill-front-title-html-css {
+    background-image: url("../../img/skills/html-css.jpg");
+    background-position: center;
+}
+
+#hard-skill-front-title-react {
+    background-image: url("../../img/skills/react.png");
+}
+
+#hard-skill-front-title-bootstrap {
+    background-image: url("../../img/skills/bootstrap.jpeg");
+}
+
+#hard-skill-front-title-git {
+    background-image: url("../../img/skills/git.jpg");
+}
+
+.hard-skill-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+.hard-skills-card:hover .card-container .hard-skill-profile {
+    width: 115px;
+    height: 115px;
+}
+
+.hard-skills-card:hover .card-container .hard-skill-front-title p{
+    color: black;
+}
+
+.progress-bar-container {
+    height: 15px;
+    width: 70%;
+    margin: 0 auto;
+    background-color:rgb(212, 212, 212);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-value {
+    background-color: white;
+    height: 100%;
+}
+
+.card-level {
+    font-style: italic;
+}

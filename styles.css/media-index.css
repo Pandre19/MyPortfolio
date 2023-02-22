@@ -1,0 +1,247 @@
+
+
+@media only screen and (min-width: 450px) {
+
+     /* --------------------------------- */
+    /* Introduction */
+
+    .introduction-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro-left-section {
+        height: 100%;
+    }
+    
+    .intro-right-section {
+        position: relative;
+        height: 100%;
+        background-color: rgb(253, 198, 253);
+    }
+
+    .intro-right-section img {
+        display: none;
+    }
+
+
+
+    .location-age-wrapper {
+        display: none;
+    }
+
+    .intro-left-wrapper {
+        gap: 20px;
+    }
+    /* --------------------------------- */
+    /* Social media wrapper */
+
+    .social-media-buttons-wrapper {
+        width: 420px;
+    }
+
+    .social-media-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .social-media-button:hover {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    
+    /* ---------------------------- */
+    /* PORTFOLIO */
+
+    .grid-portfolio{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .single-project-text {
+        padding: 0 3%;
+    }
+    .single-project-text p {
+        margin: 0 2%;
+    }
+
+    .single-project-portfolio > img {
+        height: 250px;
+    }
+
+     /* --------------------------------- */
+    /* Introduction */
+    
+    .intro-description {
+        display: block;
+        text-align: left;
+        text-shadow: 2px 1px 6px rgba(24,10,6,0.93);
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ----------------------------------- */
+    /* Why I am a great asset */
+
+    .stars-background-wrapper {
+        max-width: 900px;
+        min-width: 75%;
+        /* background-color: yellow; */
+    }
+
+    .stars-paragraph {
+        border-bottom: none;
+        width: 80%;
+        /* background-color: red; */
+    }
+    .stars-paragraph-wrapper{
+        margin-bottom: 40px;
+        /* background-color: blue; */
+    }
+
+    .stars-paragraph-wrapper-left {
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .stars-paragraph-wrapper-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .stars-paragraph-wrapper-left .stars-paragraph {
+        text-align: left;
+        padding-left: 20px;
+        border-left: 4px solid white;
+    }
+
+    .stars-paragraph-wrapper-right .stars-paragraph {
+        text-align: right;
+        padding-right: 20px;
+        border-right: 4px solid white;
+    }
+
+    .stars-paragraph {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    /* ------------------------------ */
+    /* FOOTER */
+
+    .wrapper-footer {
+        width: 70% !important;
+    }
+
+    .footer-link-three {
+        display: inline-block;
+    }
+
+    .footer-link-one {
+        display: none;
+    }
+
+    .footer-button-information-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-button-information-link {
+        flex: 1 1 250px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* --------------------------------- */
+    /* PORTFOLIO */
+
+    .grid-portfolio{
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .single-project-text p {
+        font-size: 1.1rem;
+    }
+
+     /* --------------------------------- */
+    /* Introduction */
+
+    .intro-right-section img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;right:0;
+    }
+
+    /* ---------------------------- */
+    /* why am i a great a asset */
+    .whole-quote-wrapper {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* ---------------------------------- */
+    /* Social Media */
+
+    .social-media-buttons-wrapper {
+        width: 520px;
+    }
+
+    .social-media-wrapper {
+        height: 250px;
+    }
+
+    /* ---------------------------------- */
+    /* FOOTER */
+
+    .wrapper-portfolio, .wrapper-sub-footer {
+        width: 80%;
+    }
+
+    .wrapper-footer {
+        width: 80% !important;
+    }
+
+    .wrapper-footer {
+        flex-direction: row;
+    }
+
+    .wrapper-contact {
+        flex: 6.5;
+    }
+
+    .wrapper-footer-link-buttons {
+        flex: 3.5;
+    }
+
+    .footer-button-information-wrapper {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    .footer-button-information-link {
+        flex: 0;
+    }
+
+    .wrapper-contact {
+        justify-content: center;
+    }
+}

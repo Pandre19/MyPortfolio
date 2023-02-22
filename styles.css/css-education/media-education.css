@@ -1,0 +1,43 @@
+
+@media only screen and (min-width: 768px) {
+    .change-content-buttons-wrapper {
+        flex-direction: row;
+    }
+
+    .change-content-button {
+        flex: 1;
+    }
+
+    .myeducation-card-wrapper{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .myeducation-card-wrapper > img {
+        flex: 1;
+    }
+
+    .my-education-card-content{
+        flex: 3;
+        align-items: start;
+    }
+
+    .my-education-card-description {
+        text-align: start;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .education-background-wrapper {
+        width: 70% !important;
+    }
+    
+    .my-education-card-read-more {
+        display: none;
+    }
+
+    .my-education-card-description {
+        display: block;
+    }
+
+}

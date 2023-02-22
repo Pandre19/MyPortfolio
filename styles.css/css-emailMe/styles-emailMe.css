@@ -1,0 +1,92 @@
+.emailme-whole-background {
+    margin-top: 95px !important;
+    min-height: calc(100vh - 95px);
+    background-color: white;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.emailme-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.emailme-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.email-wrapper-message {
+    background-color: rgb(177, 114, 177);
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px 25px;
+    gap: 15px;
+}
+
+.email-wrapper-message ul {
+    list-style: none;
+}
+
+.email-wrapper-message h3 {
+    color: white;
+    font-style: italic;
+}
+
+.email-wrapper-form {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.subform-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+	box-shadow: 0px 0px 7px 0px #e67a73;
+	background:linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+	background-color:#e4685d;
+	border-radius:28px;
+	border:1px solid white;
+	cursor:pointer;
+	color:white;
+	font-size:17px;
+	padding:13px 31px;
+}
+button:hover {
+	background:linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+	background-color:#eb675e;
+}
+
+
+
+input, textarea {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-color: #cacaca;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 23px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}

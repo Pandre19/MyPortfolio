@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(230, 230, 230);;
+}
+
+.portfolio-page-whole-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 95px !important;
+    padding: 30px 0;
+    min-height: 300px;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-page-settings-wrapper {
+    top: 110px;
+    max-height: 300px;
+}
+
+
+.potfolio-page-common-style-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.title-wrapper-settings-portfolio {
+    background-color: rgb(142, 140, 255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.title-wrapper-settings-portfolio h3{
+    color: white;
+}
+
+.content-wrapper-settings-portfolio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portfolio-form-row {
+    display: flex;
+    gap: 8px;
+    float: left;
+    margin-right: 20px;
+}
+
+#portfolio-page-form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-settings-section {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.setting-portfolio-github-link {
+    font-weight: 300;
+    color: rgb(121, 158, 170);
+}
+
+.setting-portfolio-github-link:hover{
+    color: rgb(115, 168, 185);
+}
+
+.single-project-portfolio {
+    display: none;
+}
+
+#no-portfolios-message-wrapper {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
